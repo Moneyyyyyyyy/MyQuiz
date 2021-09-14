@@ -29,9 +29,20 @@ public class SingelPattern {
             return instance;
         }
 
+        public static SingelTestClass getInstance2(){
+            if (instance == null){
+                synchronized (SingelTestClass.class){
+                    if (instance==null){
+                        instance = new SingelTestClass();
+                    }
+                }
+            }
+            return instance;
+        }
 
 
-    }
+
+   }
 
 
     /**
