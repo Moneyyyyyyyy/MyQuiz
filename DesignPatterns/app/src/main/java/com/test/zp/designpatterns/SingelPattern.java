@@ -34,7 +34,7 @@ public class SingelPattern {
                 synchronized (SingelTestClass.class){
                     if (instance==null){
                         instance = new SingelTestClass();
-                    }
+                    } 
                 }
             }
             return instance;
